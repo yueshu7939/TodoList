@@ -1,0 +1,105 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: linen;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app-header {
+    text-align: center;
+    height: 40px;
+    background: gold;
+    padding: 5%;
+    border: solid;
+    border-color: lightgrey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app-title {
+    font-size: 28px;
+    line-height: 40px;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.app-body {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.done-true {
+    text-decoration: line-through;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.archive-control {
+    border-bottom: 1px solid;
+    border-color: lightgrey;
+    height: 22px;
+    line-height: 22px;
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.todo-form {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+input[type="text"] {
+    border-bottom: 1px solid;
+    border-color: lightgrey;
+    border-top: 10px;
+    border-right: 0px;
+    border-left: 0px;
+    height: 30px;
+    width: 100%;
+    max-width: 666px;
+    background-color: linen;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="submit"] {
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    width: 120px;
+    color: black;
+    background-color: gold;
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>351ToDoList</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+
+<body data-ng-app="">
+<div class="container" data-ng-controller="TodoController">
+    <header class="app-header">
+        <h1 class="app-title">351 ToDo List</h1>
+    </header>
+
+
+    <section class="app-body">
+        <section class="archive-control">
+            <span>{{ remaining() }} of {{ todos.length }} remaining</span>
+            <p>[ <a href="" data-ng-click="archive()">Click me to archive completed items</a> ]</p>
+        </section>
+
+        <ul class="unstyled">
+            <li data-ng-repeat="todo in todos track by $index">
+                <input type="checkbox" data-ng-model="todo.done">
+                <span class="done-{{ todo.done }}">{{ todo.text }}</span>
+            </li>
+        </ul>
+
+        <form data-ng-submit="addTodo()" class="todo-form">
+            <input type="text" data-ng-model="todoText" placeholder="Enter new ToDo item"/>
+            <br/>
+            <input type="submit" value="Add to List"/>
+        </form>
+    </section>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js'></script>
+<script src="index.js"></script>
+
+</body>
+</html>
